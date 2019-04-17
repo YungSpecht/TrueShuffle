@@ -1,6 +1,6 @@
 %hook SPTFreeTierPlaylistTrackShuffler
 - (void)setRandomNumbers:(id)arg1 {
-return %orig;
+%orig;
 } 
 
 - (id)randomNumbers {
@@ -25,9 +25,8 @@ return %orig;
     return [UIColor colorWithRed:134.0/255.0 green:198.0/255.0 blue:255.0/255.0 alpha:255.0/255.0];
 } 
 
-- (void)setIconColor:(id)arg1 {
-    arg1 = [UIColor colorWithRed:134.0/255.0 green:198.0/255.0 blue:255.0/255.0 alpha:255.0/255.0];
-    %orig;
+-(void)setIconColor:(id)arg1 {
+    %orig([UIColor colorWithRed:134.0/255.0 green:198.0/255.0 blue:255.0/255.0 alpha:255.0/255.0]);
 } 
 %end
 
