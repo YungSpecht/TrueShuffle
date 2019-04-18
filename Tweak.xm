@@ -12,21 +12,20 @@ return %orig;
     arg3 = NO;
     return %orig;
 } 
-%end
 
-%hook SPTFreeTierPlaylistTrackShuffler
 - (id)weightedShuffleListWithTracks:(id)arg1 recommendations:(id)arg2 {
     return NULL;
 } 
 %end
 
-%hook SPTNowPlayingShuffleButton
-- (id)iconColor {
-    return [UIColor colorWithRed:134.0/255.0 green:198.0/255.0 blue:255.0/255.0 alpha:255.0/255.0];
+
+%hook SPTSignupParameterShufflerImplementation
+- (id)createShuffledKeyListFromParameters:(id)arg1 {
+    return NULL;
 } 
 
--(void)setIconColor:(id)arg1 {
-    %orig([UIColor colorWithRed:134.0/255.0 green:198.0/255.0 blue:255.0/255.0 alpha:255.0/255.0]);
+- (id)createHashFromParameterValues:(id)arg1 {
+    return NULL;
 } 
 %end
 
