@@ -1,11 +1,11 @@
 Package: com.rango.trueshuffle
 Name: TrueShuffle
 Depends: mobilesubstrate
-Version: 1.3
+Version: 1.2
 Architecture: iphoneos-arm
 Description: True random shuffling in the Spotify App!
 Maintainer: Rango
 Author: Yung Specht
 Section: Tweaks
 Depiction: https://yungspecht.github.io/depictions/?p=com.rango.trueshuffle
-
+SileoDepiction: https://yungspecht.github.io/sileodepictions/com.rango.trueshuffle/depiction.json
